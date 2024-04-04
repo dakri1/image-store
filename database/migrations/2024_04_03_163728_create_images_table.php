@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string("fileName");
             $table->dateTime("uploaded_at");
-            $table->timestamps();
         });
     }
 
