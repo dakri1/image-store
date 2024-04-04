@@ -22,11 +22,11 @@
 </p>
 @foreach($images as $image)
     <div>
-        <p>File Name: {{ $image->fileName }}</p>
-        <p>Uploaded At: {{ $image->uploaded_at }}</p>
+        <p>Имя файла: {{ $image->fileName }}</p>
+        <p>Загруженно: {{ $image->uploaded_at }}</p>
         <img src="{{ asset('uploads/'.$image->fileName) }}" alt="{{ $image->fileName }}" width="100">
-        <a href="{{ asset('uploads/'.$image->fileName) }}" target="_blank">View Original Image</a>
-        <a href="{{ route("download", ['filename' => $image->fileName]) }}">Download</a>
+        <a href="{{ asset('uploads/'.$image->fileName) }}" target="_blank">Посмотреть оригинал</a>
+        <a href="{{ route("download", ['filename' => $image->fileName]) }}">Скаать</a>
         <hr>
     </div>
 @endforeach
