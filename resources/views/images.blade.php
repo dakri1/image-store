@@ -26,7 +26,7 @@
         <p>Загруженно: {{ $image->uploaded_at }}</p>
         <img src="{{ asset('uploads/'.$image->fileName) }}" alt="{{ $image->fileName }}" width="100">
         <a href="{{ asset('uploads/'.$image->fileName) }}" target="_blank">Посмотреть оригинал</a>
-        <a href="{{ route("download", ['filename' => $image->fileName]) }}">Скаать</a>
+        <a href="{{ route("download", ['filename' => $image->fileName]) }}">Скачать</a>
         <hr>
     </div>
 @endforeach
